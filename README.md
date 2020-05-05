@@ -15,3 +15,13 @@ A DFA has five-tuple:
 		 δ(q,s) = q’	   is equal to some state q’ in Q, could be q’=q
 
 	Intuitively, δ(q,s) is the state entered by M after reading symbol s while in state q.
+
+                                        Method: Myhill-Nerode Theorem
+Algorithm
+Step 1:  Make a table taking all states of N*N where N is number of states
+
+Step 2: Mark all pairs which are one final and other non-final
+
+Step 3: Repeat step 2 until we cannot mark anymore states ALso If there is any unmarked pair, mark it if the pair {δ (qi, A), δ (qi, A)} is marked for some input alphabet.
+
+Step 4: Take all unmarked pair and combine them to single state
